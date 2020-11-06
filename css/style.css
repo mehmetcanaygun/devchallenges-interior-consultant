@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Lora&family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #181719;
+}
+
+header {
+  padding: 40px 5%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Crimson Pro", serif;
+  border: 1px solid #fff;
+  padding: 8px;
+}
+
+header .navbar ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar ul li:not(:last-child) {
+  margin-right: 80px;
+}
+
+header .navbar ul li.active {
+  font-weight: bold;
+}
+
+header .menu-btn {
+  display: none;
+}
+
+.grid {
+  padding: 100px 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.grid .grid-info,
+.grid .grid-img {
+  width: 100%;
+}
+
+.grid .grid-info {
+  color: #fff;
+}
+
+.grid .grid-info h1 {
+  font-family: "Lora", serif;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.grid .grid-info p {
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.grid .grid-info a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid .grid-info a i {
+  margin-left: 20px;
+}
+
+.grid .grid-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.grid .grid-img img {
+  max-width: 80%;
+}
+
+.grid .grid-img .card {
+  position: absolute;
+  bottom: 0;
+  right: 4%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  padding: 20px;
+  background-color: #181719;
+  color: #fff;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.grid .grid-img .card .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.grid .grid-img .card .info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.grid .grid-img .card .info div .name {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.grid .grid-img .card .info div .title {
+  font-size: 12px;
+  color: #828282;
+}
+
+.grid .grid-img .card h2 {
+  font-family: "Lora", serif;
+  width: 70%;
+  margin-top: 20px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0 40px 0;
+  color: #a9a9a9;
+  font-size: 14px;
+  font-weight: 600;
+}
