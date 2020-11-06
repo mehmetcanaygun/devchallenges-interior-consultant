@@ -68,6 +68,8 @@ header .menu-btn span {
   background-color: #f2f2f2;
   position: absolute;
   left: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 header .menu-btn .top {
@@ -80,6 +82,26 @@ header .menu-btn .middle {
 
 header .menu-btn .bottom {
   top: 16px;
+}
+
+header .menu-btn:focus {
+  outline: none;
+}
+
+header .menu-btn.toggled .top {
+  top: 8px;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+header .menu-btn.toggled .middle {
+  opacity: 0;
+}
+
+header .menu-btn.toggled .bottom {
+  top: 8px;
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
 }
 
 .grid {

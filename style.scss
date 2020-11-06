@@ -68,6 +68,7 @@ header {
       background-color: $col-light-2;
       position: absolute;
       left: 0;
+      transition: 0.3s ease;
     }
 
     .top {
@@ -78,6 +79,24 @@ header {
     }
     .bottom {
       top: 16px;
+    }
+  }
+
+  .menu-btn:focus {
+    outline: none;
+  }
+
+  .menu-btn.toggled {
+    .top {
+      top: 8px;
+      transform: rotate(225deg);
+    }
+    .middle {
+      opacity: 0;
+    }
+    .bottom {
+      top: 8px;
+      transform: rotate(-225deg);
     }
   }
 }
